@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Complaint Management System</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* General styling */
+        body {
+            background-image: url('https://example.com/customer.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        /* Navbar styling */
+        .navbar-inverse {
+            background-color: #333;
+            border: none;
+        }
+
+        .navbar-brand, .navbar-nav li a {
+            color: white !important;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar-brand:hover, .navbar-nav li a:hover {
+            color: #FFD700 !important; /* Gold color on hover */
+        }
+
+        /* Carousel styling */
+        .carousel .item {
+            height: 500px;
+        }
+
+        .carousel .fill {
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .carousel-control {
+            background: none;
+            border: none;
+        }
+
+        .carousel-control span {
+            font-size: 30px;
+            color: #FFD700;
+        }
+
+        .carousel-indicators li {
+            background-color: #FFD700;
+        }
+
+        /* Welcome section */
+        .com {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .com h1 {
+            color: #333;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .com p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Adding smooth transitions */
+        a, button, .carousel-control {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Complaint Management</a>
+            </div>
+            <!-- Collect the nav links -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost/cmss/users/">User Login</a></li>
+                    <li><a href="http://localhost/cmss/users/registration.php">User Registration</a></li>
+                    <li><a href="http://localhost/cmss/admin/">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://localhost/cmss/img/customer.jpg');"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://localhost/cmss/img/customer1.png');"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="com">
+                    <h1><b>WELCOME TO COMPLAINT MANAGEMENT SYSTEM</b></h1>
+                    <p><h2>The Easiest Way To Complain Online</h2>
+                    <br><b><i>Tired of getting ripped off? Fight back and file a customer complaint now. Sign Up Today and You Can Leave Complaints on various topics/companies.</i></b></p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 4000 // changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
